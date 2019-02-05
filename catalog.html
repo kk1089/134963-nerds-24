@@ -10,19 +10,16 @@
 
   <header class="main-neader">
     <nav class="main-navigation">
-      <a class="main-header-logo">
+      <a class="main-header-logo" href="index.html">
         <img src="img/nerds-logo.svg" width="160" height="65" alt=" Логотип сайта «Нёрдс»"></a>
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
         <li> <a href="#">Клиенты</a></li>
         <li class="site-navigation-current"> <a href="catalog.html">Магазин</a></li>
         <li> <a href="#">Контакты</a></li>
-      </ul>
-      <ul class="basket-navigation">
         <li>Корзина</li>
       </ul>
     </nav>
-    <!-- Здесь будет форма -->
   </header>
   <main class="container">
     <h1 class="visually-hidden">Шаблоны сайтов</h1>
@@ -51,12 +48,12 @@
           <legend>ОСОБЕННОСТИ:</legend>
           <ul>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="Slider" id="filter-Slider" checked>
+              <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
               <label for="filter-Slider">Слайдер</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="Advantage block" id="filter-Advantage block">
-              <label for="Advantage block">Блок преимуществ</label>
+              <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="Advantage block" id="filter-Advantage-block">
+              <label for="filter-Advantage-block">Блок преимуществ</label>
             </li>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="news" id="filter-news">
@@ -72,13 +69,9 @@
             </li>
           </ul>
         </fieldset>
-
         <button type="submit" class="filter-button button">Показать</button>
       </form>
       <h2 class="visually-hidden">Сортировка товара</h2>
-
-      <!-- Здесь будет форма -->
-
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Список сайтов, прилложений и призентаций</h2>
@@ -124,12 +117,11 @@
   </main>
   <footer class="main-footer">
     <p class="footer-contacts">
-      NЁRDS DESIGN STUDIO<br>
-      191186 г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-      <a href="#">Напишите нам</a><br>
-      Телефон: +7 (812) 275-75-75
+      NЁRDS DESIGN STUDIO
+      <br> 191186 г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+      <br> Телефон: +7 (812) 275-75-75
+      <a href="#">Напишите нам</a>
     </p>
-    <a class=""></a>
     <div class="footer-social">
       <h3>Давайте дружить, Это выгодно!</h3>
       <p>скидка 10% для друзей из социальных сетей.</p>
@@ -140,3 +132,22 @@
       </ul>
     </div>
   </footer>
+  <div class="modal modal-write-us">
+    <form class="modal-letter" method="post" action="https://echo.htmlacademy.ru">
+      <legend class="">Напишите нам</legend>
+      <label>
+        <span>Ваше имя:</span>
+        <input class="" type="text" name="user" placeholder="Имя Фамилия">
+      </label>
+      <label>
+        <span>Ваш e-mail:</span>
+        <input class="" type="email" name="email" placeholder="email@example.com">
+      </label>
+      <label>
+        <span>Текст письма:</span>
+        <textarea class="" rows="6" placeholder="В свободной форме"></textarea>
+      </label>
+      <button class="button" type="submit">ОТПРАВИТЬ</button>
+    </form>
+  </div>
+</body>
