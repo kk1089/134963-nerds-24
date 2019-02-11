@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -116,12 +119,17 @@
     </section>
   </main>
   <footer class="main-footer">
-    <p class="footer-contacts">
-      NЁRDS DESIGN STUDIO
-      <br> 191186 г. Санкт-Петербург, Б. Конюшенная, д. 19/8
-      <br> Телефон: +7 (812) 275-75-75
-      <a href="#">Напишите нам</a>
-    </p>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586828!2d30.32085335192607!3d59.93871648178729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1549902816053" width="1440" height="416" style="border:0" allowfullscreen></iframe>
+      <div class="map-contacts">
+        <h4>NЁRDS DESIGN STUDIO</h4>
+        <p class="footer-contacts">
+          <br> 191186 г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+          <br> Телефон: +7 (812) 275-75-75
+          <a class="button">Напишите нам</a>
+        </p>
+      </div>
+    </div>
     <div class="footer-social">
       <h3>Давайте дружить, Это выгодно!</h3>
       <p>скидка 10% для друзей из социальных сетей.</p>
@@ -134,7 +142,7 @@
   </footer>
   <div class="modal modal-write-us">
     <form class="modal-letter" method="post" action="https://echo.htmlacademy.ru">
-      <h4 class="">Напишите нам</h4>
+      <h2>Напишите нам</h2>
       <label>
         <span>Ваше имя:</span>
         <input class="" type="text" name="user" placeholder="Имя Фамилия">
@@ -151,4 +159,5 @@
     </form>
   </div>
 </body>
+
 </html>
